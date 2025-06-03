@@ -43,13 +43,13 @@ git clone https://github.com/tpruvot/cpuminer-multi
 sudo ./autogen.sh
 ```
 
-**Command to configure cpu-miner multi:**
+**Command to configure cpuminer-multi:**
 
 ```
 sudo ./configure --disable-assembly CFLAGS="-Ofast -march=native" --with-crypto --with-curl
 ```
 
-**Command to build/compile cpu miner:**
+**Command to build/compile cpuminer:**
 
 ```
 sudo ./build.sh
@@ -60,3 +60,10 @@ sudo ./build.sh
 ```
 ./cpuminer -a sha256d -o stratum+tcp://POOLADDRESS:PORTNUMBER -u WALLETADDRESS.WORKERNAME -p PASSWORD
 ```
+
+**Command to check cpu temperature:**
+
+```
+vcgencmd measure_temp
+```
+
